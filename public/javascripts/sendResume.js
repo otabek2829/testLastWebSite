@@ -23,6 +23,7 @@ function openResumeScreen() {
     document.querySelector(".sendResumeScreen").style.display = "block";
     blur.classList.add('blur')
     
+    // Telefon Raqamni Filterlash
     var maskOptions = {
         mask: '+99{8}(00)000-00-00',
         lazy : false
@@ -31,7 +32,6 @@ function openResumeScreen() {
       mask.updateValue()
 }
 
-// const phoneNumber = document.querySelector("#phoneNumber");
 
 
 form.addEventListener("submit", (e) => {
@@ -39,6 +39,7 @@ form.addEventListener("submit", (e) => {
 
     let message = `<b>  Message came: 📩 </b> \n`;
     message += `<b> 👤 Name: </b>${this.userName.value}\n`;
+    message += `<b> 👤 Категория: </b>${this.category.value}\n`;
     message += `<b> ☎️ Telephone: </b>${this.phoneNumber.value}\n`;
 
     const formData = new FormData();
