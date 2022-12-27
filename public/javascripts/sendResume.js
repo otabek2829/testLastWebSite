@@ -1,3 +1,5 @@
+// const CHAT_ID = "5902586780";
+// const TOKEN = "5759950502:AAHWwkF9cNAl6QEaK4H9pkJf9UUoF52ffHY";
 const CHAT_ID = "5797979499";
 const TOKEN = "5951246355:AAEq6VemTIv0qjCktLo5mvetvoA5zEXUBbE";
 const form = document.querySelector("#form-message");
@@ -22,7 +24,7 @@ function closeResumeScreen() {
 function openResumeScreen() {
     document.querySelector(".sendResumeScreen").style.display = "block";
     blur.classList.add('blur')
-    
+
     // Telefon Raqamni Filterlash
     var maskOptions = {
         mask: '+99{8}(00)000-00-00',
@@ -39,8 +41,10 @@ form.addEventListener("submit", (e) => {
 
     let message = `<b>  Message came: 📩 </b> \n`;
     message += `<b> 👤 Name: </b>${this.userName.value}\n`;
-    message += `<b> 👤 Категория: </b>${this.category.value}\n`;
-    message += `<b> ☎️ Telephone: </b>${this.phoneNumber.value}\n`;
+
+    message += `<b> 👔 Категория: </b>${this.inputState.value}\n`;
+    
+    message += `<b> ☎️ Telephone: </b>${this.phoneNumber.value}\n`; 
 
     const formData = new FormData();
 
@@ -57,7 +61,7 @@ form.addEventListener("submit", (e) => {
             text: message,
         })
         .then((res) => {
-
+            console.log(true);
             successPage.style.display = 'block'
             bodyPage.style.display = 'none'
             title.style.display = 'none'
@@ -69,6 +73,7 @@ form.addEventListener("submit", (e) => {
                 }, 1500);
         })
         .catch((err) => {
+            console.log('Error');
             console.log(err);
         });
 });
