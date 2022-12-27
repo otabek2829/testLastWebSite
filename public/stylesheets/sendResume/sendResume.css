@@ -50,6 +50,7 @@
 .sendResumeScreen .box .body-page {
     text-align: center;
 }
+.sendResumeScreen .box form select,
 .sendResumeScreen .box form input{
     width: 80%;
     margin: 30px auto;

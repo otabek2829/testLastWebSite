@@ -1,4 +1,4 @@
-
+option
 
 <div class="sendResumeScreen">
     <div class="close-button" onclick="closeResumeScreen()">
@@ -13,6 +13,20 @@
                     </div>
                     <div class="body-page">
                         <input type="text" name="name" id="userName" placeholder="Имя" autocomplete="off" required>
+                         <select id="inputState" name="category" class=" category" required > 
+                                                    {{!-- <option selected >&#9660 Выберите вакансию  </option> --}}
+                                                       <option disabled selected>Выберите категорию</option>
+                                                        <option value="Kонсультацию">Получить консультацию</option>
+                                                            <option value="Kонсультацию">Наши услуги</option>
+                                                         <optgroup label="Вакансии">
+                                                          <option name="ВАКАНСИИ / Bеб-разработчик" >Bеб-разработчик</option>
+                                                          <option name="ВАКАНСИИ / SMM" >Smm</option>
+                                                          <option name="ВАКАНСИИ / Графический дизайн" >Графический дизайн</option>
+                                                          <option name="ВАКАНСИИ / Мобилограф" >Мобилограф</option>
+                                                          <option name="ВАКАНСИИ / Другой " >Другой...</option>
+                                                        </optgroup>
+                                                        
+                         </select>
                         <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Телефон" autocomplete="off" required>
                         <button id="submit-btn" value="Отправить заявку" type="submit">Отправить заявку</button>
                     </div>
