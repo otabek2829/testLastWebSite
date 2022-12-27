@@ -1,0 +1,152 @@
+<button onclick="openResumeScreen()" class="right-fixed-button">Получить консультацию</button>
+<button id="top" class="up-to-button">
+    <a href="#" id="top"><i class="bi bi-arrow-up"></i></a>
+</button>
+
+<div class="location-screen-box" onclick="closeAdressLocation()">
+    <div class="container ">
+        <div class="col-6 box">
+            <div class="close-button">
+                <i class="bi bi-x-circle"></i>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1260.0929800632468!2d69.2446669193979!3d41.30836162793725!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b4305d7def5%3A0xef1da19bf0896bc1!2z0KLQsNGI0LrQtdC90YI!5e0!3m2!1sru!2s!4v1669960820455!5m2!1sru!2s"
+                width="100%" height="458" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="body-text">
+                <div class="row justify-content-center align-items-start">
+                    <div class="col-6 ">
+                        <h3>Ориентиры:</h3>
+                        <ul>
+                            <li>- Банк "Хамкор-банк"</li>
+                            <li>- Мажор-клуб "Мажор"</li>
+                            <li>- Метро  "Xalqlar Do'stligi"</li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <h3>До нас едут:</h3>
+                        <span>Автобусы: через яндекс или метро </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{> sendResume/sendResumeScreen}}
+
+<!-- Header Starting -->
+<header id="header" class="header-builder">
+    <div class="header-top" id="top">
+        <div class="container">
+            <div class="row justify-content-around align-items-center">
+                <div class=" col-2">
+                    <div class="header-logo">
+                        <img class="img-fluid" src="/images/major-icon/мажор вектор лого черный.png" alt="">
+                    </div>
+                </div>
+                <div class="col-8 col-lg-6 header-contact ">
+                    <div class="col-auto text-right">
+                        <a class="header-contact-phone" href="tel:+998 77 010 80 00">+99877-010-80-00</a>
+                        <p class="header-contact-worktime ">08:00 - 20:00</p>
+                        <p class="header-contact-workdays m-0">Пн - Сб</p>
+                    </div>
+                    <div class="or"></div>
+                    <div class="col-auto">
+                        <a href="" class="header-contact-email">info@Major.uz</a>
+                        <p class="header-contact-adress">ул. М. Гафурова 14/1</p>
+                        <a href="#" onclick="openAdressLocation()" class="header-contact-location">Как добраться?</a>
+                    </div>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                    <div class="contact-btn">
+                        <button class="btn btn-danger" onclick="openResumeScreen()">
+                            <a href="#">ОСТАВИТЬ ЗАЯВКУ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-menu">
+        <div class="fixed-menu-navbar"></div>
+        <div class="container-fluid container-lg">
+            <div class="navbar">
+                <ul>
+                    <li><a  href="/">ГЛАВНАЯ</a></li>
+                    <li class="uslugi" onclick="dropdown_show()">УСЛУГИ <i class="bi bi-caret-down"></i></li>
+                    <li><a href="/price">ЦЕНЫ</a></li>
+                    <li><a href="/portfolio">ПОРТФОЛИО</a></li>
+                    <li><a href="/otziv">ОТЗЫВЫ</a></li>
+                    <li><a href="/o-company">О КОМПАНИИ</a></li>
+                    <li><a href="/contact">КОНТАКТЫ</a></li>
+                    <li><a href="/vakansii">ВАКАНСИИ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="dropdown__menu">
+            <div class="container">
+                <div class="row justify-content-around align-items-start">
+                    <div class="col-3">
+                        <div class="ul-title">
+                            <h6><a href="#">РАЗРАБОТКА САЙТОВ</a></h6>
+                        </div>
+                        <ul>
+                            <li> <i class="bi bi-check2-square"></i><a href="/uslugi/websites/promo-page">Promo page</a>
+                            </li>
+                            <li> <i class="bi bi-check2-square"></i><a
+                                    href="/uslugi/websites/site-visit">Сайт-визитка</a></li>
+                            <li> <i class="bi bi-check2-square"></i><a href="/uslugi/websites/landing-page">Landing
+                                    page</a></li>
+                            <li> <i class="bi bi-check2-square"></i><a
+                                    href="/uslugi/websites/corporativ-site">Корпоративные сайты</a></li>
+                            <li> <i class="bi bi-check2-square"></i><a
+                                    href="/uslugi/websites/site-catalog">Сайт-каталог</a></li>
+                            <li> <i class="bi bi-check2-square"></i><a
+                                    href="/uslugi/websites/internet-magazin">Интернет-магазины</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <div class="ul-title">
+                            <h6><a href="#">РЕКЛАМА В СОЦИАЛЬНЫХ СЕТЯХ</a> </h6>
+                        </div>
+                        <ul>
+                            <li><i class="bi bi-check2-square"></i><a href="/uslugi/reklama/smm">SMM-продвижение</a>
+                            </li>
+                            <li><i class="bi bi-check2-square"></i><a href="/uslugi/reklama/target">Таргетированная
+                                    реклама</a></li>
+                            <li><i class="bi bi-check2-square"></i><a href="/uslugi/reklama/tgChannel">Реклама в
+                                    Telegram-каналах</a></li>
+                            <li><i class="bi bi-check2-square"></i><a href="/uslugi/reklama/reklamaFacebook">Реклама в
+                                    Facebook</a></li>
+                            <li><i class="bi bi-check2-square"></i><a href="/uslugi/reklama/reklamaInstagram">Реклама в
+                                    Instagram</a></li>
+                            <li><i class="bi bi-check2-square"></i><a
+                                    href="/uslugi/reklama/reklamaOdnoklassniki">Реклама в Одноклассники.ру</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <div class="ul-title">
+                            <h6><a href="#">ИНСТРУМЕНТЫ ДЛЯ БИЗНЕСА</a> </h6>
+                        </div>
+                        <ul>
+                            <li><i class="bi bi-check2-square"></i><a href="/uslugi/dlyaBiznesa/logotip">Разработка
+                                    логотипа</a></li>
+                            <li><i class="bi bi-check2-square"></i><a href="/uslugi/dlyaBiznesa/telegram-bot">Разработка
+                                    Telegram-ботов</a></li>
+                            <li><i class="bi bi-check2-square"></i><a href="/uslugi/dlyaBiznesa/googleAds">Настройка
+                                    Google Ads</a></li>
+                            <li><i class="bi bi-check2-square"></i><a href="/uslugi/dlyaBiznesa/yandex">Настройка
+                                    Яндекс.Директ</a></li>
+                            <li><i class="bi bi-check2-square"></i><a
+                                    href="/uslugi/dlyaBiznesa/consalting">Интернет-консалтинг</a></li>
+                            <li><i class="bi bi-check2-square"></i><a
+                                    href="/uslugi/dlyaBiznesa/spravochnikah">Продвижение в справочниках</a></li>
+                            <li><i class="bi bi-check2-square"></i><a href="/uslugi/dlyaBiznesa/html-banner">HTML5
+                                    баннеры</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

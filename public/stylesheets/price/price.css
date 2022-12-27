@@ -1,0 +1,195 @@
+section .section-about-page ,
+section .reviews-banner
+{
+    background-image: url("/images/price background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 85px 0;
+}
+
+section .section-about-page .section-about-page-title button,
+section .section-portfolio-page .section-portfolio-page-title button,
+section .reviews-banner button ,
+section .section-consultation button 
+ {
+    border: none;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+section .section-about-page .section-about-page-title button a,
+section .section-consultation button a,
+section .section-portfolio-page .section-portfolio-page-title button a,
+section .reviews-banner button a
+ {
+    border-radius: 8px;
+    padding: 20px 35px;
+    background-color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+    display: block;
+    width: 100%;
+}
+
+section .section-about-page .section-about-page-title h2 ,
+section .section-portfolio-page .section-portfolio-page-title h2  {
+    color: #dc3545 !important;
+    font-size: 44px;
+    font-weight: 700;
+}
+
+section .section-about-page .title ,
+section .section-portfolio-page .title {
+    color: #252525;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+section .section-about-page .title-text ,
+section .section-portfolio-page .title-text {
+    font-size: 26px;
+    font-weight: 700;
+    color: #252525;
+    margin: 30px 0;
+}
+
+section .section-about-page span ,
+section .section-portfolio-page span {
+    color: #252525;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+/* Section list group items page */ 
+/* List Group Barchasi Jamalangan Kodlar Shu yerdan boshlanadi */
+section .about-list-group-items ,
+section .portfolio-list-group-items ,
+section .contact-list-group-items {
+    padding: 70px 0 60px;
+}
+
+section .about-list-group-items .list-group ,
+.admin-portfolio-page  .list-group ,
+section .portfolio-list-group-items .list-group ,
+section .contact-list-group-items .list-group {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.admin-portfolio-page  .list-group ,
+section .about-list-group-items .list-group {
+    justify-content: center;
+}
+
+.admin-portfolio-page  .list-group .list-group-item ,
+section .about-list-group-items .list-group .list-group-item ,
+section .contact-list-group-items .list-group .list-group-item ,
+section .portfolio-list-group-items .list-group .list-group-item {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: solid transparent;
+    background-color: #f3f3f3;
+    border: 1px solid #f3f3f3;
+    color: #000;
+    font-weight: 600;
+    width: auto;
+    padding: 12px 22px;
+    transition: 500ms ease;
+    margin-right: 3px;
+}
+
+.admin-portfolio-page .list-group .list-group-item.active ,
+section .about-list-group-items .list-group .list-group-item.active ,
+section .contact-list-group-items .list-group .list-group-item.active ,
+section .portfolio-list-group-items .list-group .list-group-item.active {
+    background-color: #fff;
+}
+
+/* Children Page | Menuda Tanlangan Haqida malumot beruvchi body qismi */
+
+.admin-portfolio-page .tab-content ,
+section .about-list-group-items .tab-content ,
+section .portfolio-list-group-items .tab-content {
+    margin-top: 30px;
+}
+
+section .about-list-group-items .tab-content .items-title  {
+    border-bottom: 1px solid #d7d7d7;
+    padding-bottom: 30px;
+}
+
+section .about-list-group-items .tab-content .items-title h6  {
+    color: #2a2a2a;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 0 20px;
+}
+
+section .about-list-group-items .tab-content .body-items-text{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #d7d7d7;
+    padding: 25px 20px;
+}
+
+section .about-list-group-items .tab-content .body-items-text:nth-last-child(1)  {
+    border: none;
+}
+
+section .about-list-group-items .tab-content .body-items-text h6  {
+    font-size: 15px;
+    font-weight: 500;
+    color: #2a2a2a;
+}
+
+/* Consultation page */
+
+section .section-consultation {
+    background-color: #ffe800;
+    padding: 40px 0;
+}
+section .section-consultation h2{
+    color: #0b0d3e;
+    font-size: 38px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+section .section-consultation p{
+    margin-top: 15px;
+    color: #0b0d3e;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 25px;
+}
+section .section-consultation button{
+    text-decoration: none;
+    background-color: #fff;
+    color: #000;
+    font-weight: 700;
+    padding: 20px 60px 20px 25px;
+    font-size: 30px;
+    transition: 500ms ease;
+}
+section .section-consultation button:hover{
+    background-color: beige;
+}
+section .section-consultation .phone-number,    
+section .section-consultation span{
+    display: block;
+    color: #0b0d3e;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 20px 0 20px 15px;
+}
+section .section-consultation .phone-number{
+    font-weight: 900;
+    font-size: 36px;
+    margin-left: 25px;
+    text-decoration: none;
+}    

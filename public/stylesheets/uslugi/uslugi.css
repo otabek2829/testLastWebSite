@@ -1,0 +1,50 @@
+
+/* Web Site Page Css Page */
+@import url("/stylesheets/uslugi/websites/promo-page.css");
+@import url("/stylesheets/uslugi/websites/site-visit.css");
+@import url("/stylesheets/uslugi/websites/landing-page.css");
+@import url("/stylesheets/uslugi/websites/corporativ-site.css");
+@import url("/stylesheets/uslugi/websites/site-catalog.css");
+@import url("/stylesheets/uslugi/websites/internet-magazin.css");
+/* Web Site Page Css Page */
+
+
+/* Reklama Page Css */
+/* Smm */
+@import url("/stylesheets/uslugi/reklama/smm.css");
+
+/* Target */
+@import url("/stylesheets/uslugi/reklama/target.css");
+
+/* tgChennel */
+@import url("/stylesheets/uslugi/reklama/tgChannel.css");
+
+/* reklama Facebook */
+@import url("/stylesheets/uslugi/reklama/reklamaFacebook.css");
+
+/* reklama instagram */
+@import url("/stylesheets/uslugi/reklama/reklamaInstagram.css");
+
+/* reklama odnoklassniki */
+@import url("/stylesheets/uslugi/reklama/reklamaOdnoklassniki.css");
+
+/* Dlya Biznes */
+
+/* Logotip */
+@import url("/stylesheets/uslugi/Dlya Biznesa/dlyaBiznesa.css");
+
+/* ТЕЛЕГРАМ БОТА */
+@import url("/stylesheets/uslugi/Dlya Biznesa/tg-bot.css");
+
+/* googleAds */
+@import url("/stylesheets/uslugi/Dlya Biznesa/googleAds.css");
+
+/* yandex */
+@import url("/stylesheets/uslugi/Dlya Biznesa/yandex.css");
+
+/* consalting */
+@import url("/stylesheets/uslugi/Dlya Biznesa/consalting.css");
+
+/* HTML5 БАННЕРЫ */
+@import url("/stylesheets/uslugi/Dlya Biznesa/html-banner.css");
+

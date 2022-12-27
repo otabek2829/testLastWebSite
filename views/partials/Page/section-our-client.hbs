@@ -1,0 +1,18 @@
+
+{{!-- Section Client Page --}}
+<div class="section-our-client">
+        <div class="section-our-client-title">
+            <h1>НАШИ КЛИЕНТЫ</h1>
+        </div>
+        <div class="section-our-client-items-logo">
+            <div class="container">
+                <div class="row justify-content-around">
+                    {{#each data}}
+                    <div class="col-3 box">
+                        <img class="img-fluid" src="/images/{{this.img}}" alt="">
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>

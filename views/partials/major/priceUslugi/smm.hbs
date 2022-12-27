@@ -1,0 +1,104 @@
+{{> header/admin-nav}}
+
+<div class="CommandUser">
+    <div class="title text-center my-5">
+        <h2>{{title}}</h2>
+    </div>
+</div>
+
+
+<section>
+    <!-- List Group Items -->
+    <div class="about-list-group-items">
+        <div class="container">
+            <div class="row flex-column">
+                <div class="col-12">
+                    <div class="list-group" id="list-tab" role="tablist">
+
+                        <!-- Button father -->
+
+                        <!-- Разработка сайтов -->
+
+                        <a class="list-group-item  " href="/admin/priceUslugi/webSite">Разработка сайтов</a>
+
+                        <!-- SMM -->
+                        <a class="list-group-item active" href="/admin/priceUslugi/smm">SMM</a>
+
+                        <!-- Логотипы, баннера -->
+                        <a class="list-group-item " href="/admin/priceUslugi/logoBanner">Логотипы, баннера</a>
+
+                        <!-- Техническая поддержка -->
+                        <a class="list-group-item " href="/admin/priceUslugi/technicalSupport">Техническая поддержка</a>
+
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="tab-content" id="nav-tabContent">
+
+                        <!-- Button bosilganda u haqida ma\lumot chiqishi -->
+
+                        <!-- Items title -->
+                        <div class="items-title d-flex justify-content-between">
+                            <div>
+                                <h6>Название услуги</h6>
+                            </div>
+                            <div>
+                                <h6>Стоимость услуги</h6>
+                            </div>
+                        </div>
+
+                        <!-- Smm -->
+                        <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                            aria-labelledby="list-home-list">
+                            {{#each data}}
+                            <div class="body-items-text pb-5">
+                                <h6>{{this.uslugiTitle}}</h6>
+                                <h6>от {{this.uslugiPrice}} сум</h6>
+                                <a class="updateBtn" href="/admin/priceUslugi/smm/update/{{this._id}}"><i
+                                        class="bi bi-pencil"></i></a>
+                                <a class="deleteBtn" href="/admin/priceUslugi/smm/delete/{{this._id}}"><i
+                                        class="bi bi-trash3"></i></a>
+                            </div>
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="addListFormPage">
+        {{#if uslugiTitle}}
+        <form method="POST">
+            <h6>{{title}}</h6>
+            <input type="text" name="uslugiTitle" id="" value="{{uslugiTitle}}" placeholder="Название услуги"> <br>
+            <input type="number" name="uslugiPrice" value="{{uslugiPrice}}" placeholder="Стоимость услуги" required><br>
+            <select name="category" id="select" autofocus required value="{{category}}" >
+               <option value="">{{category}}</option>
+               <option value="Разработка сайтов">Разработка сайтов</option>
+               <option value="SMM">SMM</option>
+               <option value="Логотипы, баннера">Логотипы, баннера</option>
+               <option value="Техническая поддержка">Техническая поддержка</option>
+            </select> <br>
+            <button type="submit">Update</button>
+        </form>
+        {{else}}  
+          <form action="/admin/priceUslugi/smm" method="POST">
+            <h6>{{title}}</h6>
+            <input type="text" name="uslugiTitle" id=""  placeholder="Название услуги" required> <br>
+            <input type="number" name="uslugiPrice" placeholder="Стоимость услуги" required> <br>
+            <select name="category" id="select" autofocus required>
+               <option value="">Bыберите категория</option>
+               <option value="Разработка сайтов">Разработка сайтов</option>
+               <option value="SMM">SMM</option>
+               <option value="Логотипы, баннера">Логотипы, баннера</option>
+               <option value="Техническая поддержка">Техническая поддержка</option>
+            </select> <br>
+            <button type="submit">Add List</button>
+        </form>
+        {{/if}}
+     
+    </div>
+
+</section>
+

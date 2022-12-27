@@ -1,0 +1,292 @@
+.sendFileButton{
+    padding: 12px 26px;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    background-color: #a52a2a;
+
+}
+
+
+
+
+/* Sms sonini bildirib turuvchi  */
+#msgLength{
+    display: flex;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 10px;
+    background-color: #dc3545;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.CommandUser {
+    padding: 0 0 75px 0;
+}
+.CommandUser .user-box{
+    max-width: 23%;
+    margin-right: 10px;
+    position: relative;
+    padding: 0 25px;
+    border: 1px solid #00000008;
+    background-color: whitesmoke;
+}
+.CommandUser .user-box h3{
+    text-align: left;
+    margin-top: 35px;
+    color: #0b0d3e;
+    font-size: 22px;
+    font-weight: 700;
+}
+.CommandUser .user-box i{
+    font-size: 26px;
+    color: #2a2a2a;
+    font-weight: 600;
+}
+.CommandUser .user-box p{
+    display: inline-block;
+    color: #2a2a2a;
+    margin: 25px 0 45px;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 400;
+    text-align: left;
+}
+.CommandUser .user-box .delete{
+    position: absolute;
+    text-align: right;
+    bottom: 12px;
+    right: 10px;
+}
+.admin-portfolio-page .box {
+    position: relative;
+}
+.admin-portfolio-page .delete{
+    position: absolute;
+    top: 280px;
+    right: 20px;
+}
+.logoBanner .delete{
+    background-color: #fff;
+    top: 10px;
+    padding: 5px;
+    border-radius: 20px;
+}
+.admin-portfolio-page .delete i{
+    font-size: 22px;
+    color: red;
+}
+
+ .send-box{
+    background-color: #f5f5f5;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 20px; 
+
+}
+ .send-box .img-page{
+     width: 100%;
+     height: 230px;
+     background-color: #040404d6;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: #fff;
+    }
+    .send-box .logoBanner-img {
+        height: 330px;
+    }
+ .send-box  .userImage{
+    position: absolute;
+    top: 100px;
+    left: 427px;
+    transform: scale(7.5);
+    opacity: 0.0;
+}
+ .send-box .card-body{
+    margin: 30px;
+}
+ .send-box .card-body select,
+ .send-box .card-body input{
+    margin: auto;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #d5d7dc;
+    border-radius: 5px !important;
+    color: #2f3a4f;
+    outline: 0;
+    display: block;
+    padding: 10px;
+    line-height: 1 !important;
+    text-decoration: none;
+    background: #fff;
+}
+ .send-box .card-body label{
+    display: block;
+    text-align: left;
+}
+
+/* New Page */
+.admin-login{
+    text-align: center;
+    width: 100%;
+    min-height: 100%;
+    padding: 250px 0 0 0;
+}
+.admin-login img{
+    max-width: 40%;
+}
+.admin-login .form-page{
+    padding: 26px 40px;  
+    background-color: #f5f5f5;
+    border-radius: 11px;
+}
+.admin-login .form-page form{
+    text-align: center;
+}
+.admin-login .form-page form input,
+.addListFormPage form select,
+.addListFormPage form input,
+.addListFormPage form textarea{
+    width: 80%;
+    margin: 0 auto  ;
+    border: 1px solid #d5d7dc;
+    border-radius: 5px !important;
+    color: #2f3a4f;
+    outline: 0;
+    display: block;
+    padding: 13px 15px;
+    line-height: 1 !important;
+    text-decoration: none;
+    background: #fff;
+}
+.addListFormPage form textarea{
+    width: 100%;
+    margin: 0 0 20px 0;
+}
+.addListFormPage form select{
+    width: 100% !important;
+    text-align: left;
+}
+.addListFormPage form select option {
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.admin-login .form-page form input:focus,
+.addListFormPage form select:focus,
+.addListFormPage form input:focus{
+    color: #495057;
+    background-color: #fff;
+    border-color: #979da7;
+    outline: 0;
+    box-shadow: none !important;
+}
+.addListFormPage form button ,
+.admin-login .form-page form button{
+    background-color:#a52a2a;
+    padding: 10px 33px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+/* addListFormPage  style css starting */
+
+.addListFormPage {
+    position: fixed;
+    bottom: 40px;
+    right:  -10px;
+    background: #f5f5f5;
+    padding: 35px;
+    text-align: center;
+    border-radius: 8px;
+}
+.addListFormPage input{
+    width: 100% !important;
+    font-size: 14px;
+}
+.addListFormPage form button{
+    font-size: 13px;
+}
+.body-items-text{
+    position: relative;
+}
+.updateBtn,
+.deleteBtn{
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    color: #fff;
+    padding: 1px 8px;
+    text-align: center;
+    border-radius: 3px;
+    background-color: #000000;
+}
+.deleteBtn{
+    right: 55px !important;
+    color: #a52a2a;
+}
+
+/* Cards Model */
+
+section .cards .box{
+    position: relative;
+    background-color: #f5f5f5;
+    padding: 35px;
+    width: 32%;
+}
+section .cards .box h2{
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 700;
+}
+section .cards .box p{
+    margin: 25px 0;
+    font-style: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+section .cards .box .price {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* НАШИ ПРЕИМУЩЕСТВА */
+.admin-about-company .updateBtn,
+.admin-about-company .deleteBtn {
+    position: static;
+    padding: 6px;
+}
+.admin-about-company .send-box {
+    max-width: 23%;
+}
+.admin-about-company .box {
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 25px;
+    height: 345px;
+    max-width: 23%;
+}
+
+/* Send Resume Box Page Starting */
+.message-resume .box {
+    max-width: 32%;
+    text-align: left !important;
+    background-color: #f5f5f5;
+    padding: 25px;
+    border-radius: 5px;
+}
+.message-resume .box h3{
+    text-transform: capitalize;
+}
+.message-resume .box h5 span{
+    font-size: 18px;
+    color: #a52a2a;
+}

@@ -1,0 +1,67 @@
+
+
+section .bg-image{
+    background-image: url("/images/company bg.jpg");
+    text-align: center;
+    padding: 65px 0;
+}
+section .bg-image h1{
+    font-size: 70px;
+    font-weight: 800;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+}
+section .company-about {
+    background: #0f2027;
+    background: -webkit-linear-gradient(to right, #ffffff, #ffffff, #ffffff);
+    background: linear-gradient(to right, #ffffff, #ffffff, #ffffff);
+    padding: 70px 0;
+}
+ section .company-about .people {
+    top: 94px;
+}
+section .company-about .body-text h1,
+section .company-about .body-text p{
+    color: #000 !important;
+}
+section .our-commands {
+    background-color: #eff2ff;
+    padding: 35px 0 45px;
+}
+section .our-commands .our-commands-title {
+    text-align: center;
+    margin-bottom: 40px;
+} 
+section .our-commands .our-commands-title h1{
+    font-weight: 700;
+    border-bottom: 2px solid #a2a2a2;
+    color: #000;
+    display: inline-block;
+}
+section .our-commands .our-commands-title p{
+    font-size: 20px;
+}
+section .our-commands .info-commands .box {
+    text-align: center;
+}
+section .our-commands .info-commands .box .name {
+    padding: 1px 10px;
+}
+section .our-commands .info-commands .box .name h4{
+    margin: 0;
+    margin-top: 15px;
+    color: #0b0d3e;
+    font-size: 22px;
+    font-weight: 700;
+}
+section .our-commands .info-commands .box .name span{
+    display: inline-block;
+    color: #2a2a2a;
+    margin: 0;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 400;
+    text-align: center;
+}

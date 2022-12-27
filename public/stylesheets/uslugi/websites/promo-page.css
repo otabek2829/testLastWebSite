@@ -1,0 +1,223 @@
+section .web-sites-promoPage-banner {
+    background-image: url("/images/Uslugi/Web page/promo-page-bg (1).jpg");
+}
+
+section .box-page .box {
+    max-width: 24%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border: 2px solid #f5f5f5;
+    text-align: center;
+}
+
+section .box-page .box h6 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+}
+
+section .box-page .box p {
+    font-size: 15px;
+    color: #2a2a2a;
+    text-align: center;
+}
+
+/* web-portfolio-page */
+section .web-portfolio-page {
+    background-color: #f5f5f5;
+    padding: 60px 0;
+}
+
+section .work-plan-page {
+    background-image: url("/images/work-plan-section-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 75px;
+}
+
+section .work-plan-page h3 {
+    color: #fff;
+}
+
+section .work-plan-page .box {
+    transition: all 0.3s;
+    box-shadow: 6px 0 0 0 #dc3545 inset;
+    padding: 25px 30px 25px;
+    border-radius: 5px;
+    background-color: #fff;
+    max-width: 32%;
+}
+
+section .work-plan-page .box .box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+section .work-plan-page .box .box-header h5 {
+    color: #0b0d3e;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: .96px;
+}
+
+section .work-plan-page .box p {
+    color: #0b0d3e;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .64px;
+}
+
+section .work-plan-page h3 {
+    color: #fff !important;
+}
+
+/* web-site-about */
+section .web-site-about {
+    padding: 75px 0;
+}
+
+section .web-site-about .left-page .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section .web-site-about .left-page .title h1 {
+    line-height: 1.5;
+    color: #0b0d3e;
+    font-size: 39px;
+    margin-left: 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+section .web-site-about .left-page p {
+    color: #0b0d3e;
+    font-size: 36px;
+    font-weight: 500;
+    text-align: left;
+}
+
+section .web-site-about .left-page span {
+    margin-top: 20px;
+    color: #2a2a2a;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+section .web-site-about .right-page {
+    position: relative;
+}
+
+
+section .web-site-about .right-page img {
+    position: absolute;
+    top: 122px;
+}
+
+.uslugi-page .web-site-about .right-page img {
+    top: 68px;
+}
+
+.smm .web-site-about .right-page img {
+    top: 114px;
+}
+
+/* СТОИМОСТЬ РАЗРАБОТКИ */
+section .price-web-page {
+    padding: 50px 0 60px;
+    background-color: #f5f5f5;
+}
+
+section .price-web-page .left-page {
+    padding: 20px 0 20px 0px;
+}
+
+section .price-web-page .left-page .title {
+    border-bottom: 3px solid #dc3545;
+}
+
+section .price-web-page .left-page .title h3 {
+    margin-left: 20px;
+    padding: 0 20px;
+    margin: 0 10px;
+    text-align: left;
+    color: #0b0d3e;
+    font-size: 28px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+section .price-web-page .left-page ul {
+    margin-left: 20px;
+}
+
+section .price-web-page .left-page ul li {
+    color: #2a2a2a;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+section .price-web-page .left-page span {
+    margin: 32px 0 0 32px;
+    font-size: 13px;
+}
+
+section .price-web-page .right-page {
+    position: relative;
+    border-left: 3px solid #dc3545;
+}
+
+/* Prise uslugi promo page */
+/* section .price-web-page .right-page .box h3 {
+    text-align: left;
+    color: #0b0d3e;
+    margin: 0 -20px;
+    padding: 15px 20px 0;
+    font-size: 28px;
+    font-weight: 700;
+} */
+
+section .price-web-page .right-page .send-Btn {
+    position: absolute;
+    bottom: 20px;
+    left: 24%;
+}
+
+/* Mdia Query Starting */
+
+@media (max-width:1200px) {
+    section .work-plan-page {
+        padding: 75px 0;
+      }
+      
+    .section .web-portfolio-page button {
+        padding: 15px !important;
+    }
+
+    section .web-portfolio-page button,
+    section .work-plan-page button,
+    section .tarif-plan button,
+    section .price-job button,
+    section .contact-list-group-items .tab-content .submit-resume-page form button,
+    section .price-web-page .right-page button,
+    section .header-banner button {
+        font-size: 16px !important;
+    }
+    section .work-plan-page .box p {
+        font-size: 14px;
+      }
+      .uslugi-page .web-site-about .right-page img {
+        top: 106px;
+    }
+    section .web-site-about .left-page p {
+        font-size: 27px;
+    }
+}

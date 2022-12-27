@@ -1,0 +1,123 @@
+{{> header/navbar}}
+
+
+
+<!-- Section Page -->
+<section>
+
+    <!-- Section page -->
+    <div class="section-about-page header-banner">
+        <div class="section-about-page-title">
+            <div class="container">
+                <h2>СТОИМОСТЬ НАШИХ УСЛУГ</h2>
+                <p class="title">[ИНДИВИДУАЛЬНЫЙ ПОДХОД К КАЖДОМУ КЛИЕНТУ]</p>
+                <p class="title-text">с самого начала, до первого результата, навсегда</p> <br>
+                <span>Цена забывается, качество остается.</span> <br>
+                <button onclick="openResumeScreen()">Получить консультацию</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- List Group Items -->
+    <div class="about-list-group-items">
+        <div class="container">
+            <div class="row flex-column">
+                <div class="col-12">
+                    <div class="list-group" id="list-tab" role="tablist">
+                       
+                        <!-- Button father -->
+
+                        <!-- Разработка сайтов -->
+                        <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
+                            href="#list-home" role="tab" aria-controls="home">Разработка сайтов</a>
+
+                        <!-- SMM -->
+                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+                            href="#list-messages" role="tab" aria-controls="messages">SMM</a>
+
+                        <!-- Логотипы, баннера -->
+                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+                            href="#list-settings" role="tab" aria-controls="settings">Логотипы, баннера</a>
+
+                        <!-- Техническая поддержка -->
+                        <a class="list-group-item list-group-item-action" id="list-support-list" data-toggle="list"
+                            href="#list-support" role="tab" aria-controls="support">Техническая поддержка</a>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="tab-content" id="nav-tabContent">
+
+                        <!-- Button bosilganda u haqida ma\lumot chiqishi -->
+
+                        <!-- Items title -->
+                        <div class="items-title d-flex justify-content-between">
+                            <div>
+                                <h6>Название услуги</h6>
+                            </div>
+                            <div>
+                                <h6>Стоимость услуги</h6>
+                            </div>
+                        </div>
+
+                        <!-- Разработка сайтов -->
+                        <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                            aria-labelledby="list-home-list">
+                            {{#each dataWebsite}}
+                            <div class="body-items-text">
+                                <h6>{{this.uslugiTitle}}</h6>
+                                <h6 class="formatPrice">от <span>{{this.uslugiPrice}}</span> сум</h6>
+                            </div>
+                            {{/each}}
+                        </div>
+
+                        <!-- SMM -->
+                        <div class="tab-pane fade" id="list-messages" role="tabpanel"
+                            aria-labelledby="list-messages-list">
+                            {{#each dataSmm}}
+                            <div class="body-items-text">
+                                <h6>{{this.uslugiTitle}}</h6>
+                                <h6 class="formatPrice">от <span>{{this.uslugiPrice}}</span> сум</h6>
+                            </div>
+                            {{/each}}
+                        </div>
+
+                        <!-- Логотипы, баннера -->
+                        <div class="tab-pane fade" id="list-settings" role="tabpanel"
+                            aria-labelledby="list-settings-list">
+                              {{#each dataLogoBanner}}
+                            <div class="body-items-text">
+                                <h6>{{this.uslugiTitle}}</h6>
+                                <h6 class="formatPrice">от <span>{{this.uslugiPrice}}</span> сум</h6>
+                            </div>
+                            {{/each}}
+                        </div>
+
+                        <!-- Техническая поддержка -->
+                        <div class="tab-pane fade" id="list-support" role="tabpanel"
+                            aria-labelledby="list-support-list">
+                            
+                             {{#each dataTechSupport}}
+                            <div class="body-items-text">
+                                <h6>{{this.uslugiTitle}}</h6>
+                                <h6 class="formatPrice">от <span>{{this.uslugiPrice}}</span> сум</h6>
+                            </div>
+                            {{/each}}
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Consultation page -->
+    {{> Page/section-consultation}}
+
+       <!-- Section Client Page -->
+    {{> Page/section-our-client}}
+
+</section>
+
+{{> Footer/footer}}

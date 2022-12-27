@@ -1,0 +1,385 @@
+section .section-title {
+  background-image: url("https://catherineasquithgallery.com/uploads/posts/2021-03/1614794443_46-p-fon-dlya-intro-55.jpg") !important;
+  min-height: 768px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 100px;
+}
+
+section .section-title .text-panel-page h1 {
+  color: #ffff;
+  font-size: 60px;
+}
+
+section .section-title .text-panel-page h3 {
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #fff;
+}
+
+section .section-title .text-panel-page p {
+  font-size: 28px;
+  margin-top: 50px;
+  color: rgb(255, 145, 0);
+}
+
+section .section-title .item-box {
+  position: relative;
+  top: 145px;
+}
+
+section .section-title .item-box .box {
+  max-width: 31% !important;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 0;
+  transition: 300ms ease;
+}
+
+section .section-title .item-box .box:hover {
+  transform: scale(1.1);
+}
+
+section .section-title .item-box .body-text {
+  padding: 35px;
+}
+
+section .section-title .item-box .box h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 700;
+}
+
+section .section-title .item-box .box p {
+  margin: 25px 0;
+  font-style: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+section .section-title .item-box .box .price {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Button For  */
+section .section-title .item-box .box a,
+section .section-about .body-text a,
+section .section-our-service .service-items .service-items-box button,
+section .section-request .section-request-body button,
+section .company-about .body-text a,
+section .vakansi-items-page button,
+.sendResumeScreen .box form button {
+  padding: 20px 35px;
+  background-color: #dc3545;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  display: block;
+}
+
+section .section-title .item-box .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  /* min-height: 425px; */
+  color: #000;
+}
+
+section .section-title .item-box .box a:hover {
+  text-decoration: none;
+}
+
+section .section-title .item-box .box a i {
+  font-size: 22px;
+  margin-left: 90px;
+  margin-top: 6px;
+}
+
+/* Section About Page Css Starting */
+
+section .section-about,
+section .company-about {
+  padding: 250px 0 50px;
+  background: #0f2027;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+}
+
+section .section-about .body-text h1,
+section .company-about .body-text h1 {
+  font-size: 70px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: left;
+}
+
+section .section-about .head-text,
+section .company-about .head-text {
+  display: flex;
+  margin-top: 60px;
+}
+
+section .section-about .head-text img,
+section .company-about .head-text img {
+  width: 60px;
+  height: 60px;
+  margin-right: 40px;
+}
+
+section .section-about .head-text p,
+section .company-about .head-text p {
+  max-width: 70%;
+  font-style: italic;
+  color: #fff;
+}
+
+section .section-about .body-text a,
+section .company-about .body-text a {
+  display: inline-block;
+  width: auto;
+  border-radius: 5px;
+}
+
+section .section-about .body-text p,
+section .company-about .body-text p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  font-weight: 400;
+  font-style: italic;
+}
+
+section .section-about .body-text p span,
+section .company-about .body-text p span {
+  font-weight: 700;
+}
+
+section .company-about .body-text .footer-text-title {
+  color: #fff;
+}
+
+section .company-about .body-text .footer-text {
+  color: #000;
+  font-weight: 600;
+}
+
+section .section-about .people,
+section .company-about .people {
+  position: relative;
+  max-width: 100%;
+  top: 73px;
+}
+
+
+/* For Title */
+section .section-agency .section-agency-title h1,
+section .section-our-service .section-our-service-title h1,
+section .section-our-advantages .section-our-advantage-title h1,
+section .section-our-client .section-our-client-title h1,
+section .section-request .section-request-title h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+section .section-agency .partner-items .box .body-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  margin: 0;
+  margin-top: 15px;
+}
+
+/* Section Our Service Page */
+
+section .section-our-service {
+  padding: 75px 100px;
+}
+
+section .section-our-service .service-items {
+  margin-top: 80px;
+}
+
+section .section-our-service .service-items .service-items-box {
+  box-shadow: 0 0 8px rgb(0 0 0 / 10%);
+  border-radius: 6px;
+  background-color: #fff;
+  padding-left: 45px;
+  margin-bottom: 70px;
+}
+
+section .section-our-service .service-items .service-items-box .body-text {
+  padding: 35px 15px;
+}
+
+section .section-our-service .service-items .service-items-box h2 {
+  font-weight: 700;
+}
+
+section .section-our-service .service-items .service-items-box p {
+  margin-top: 20px;
+  color: #0b0d3e;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+section .section-our-service .service-items .service-items-box ul {
+  margin-top: 30px;
+  margin-left: 22px;
+}
+
+section .section-our-service .service-items .service-items-box ul li a {
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+section .section-our-service .service-items .service-items-box ul li a:hover {
+  animation: line 800ms infinite;
+}
+
+@keyframes line {
+  0% {
+    transition: 800ms !important;
+    border-bottom: 1px solid #bfbfc7;
+  }
+
+  100% {
+    border-bottom: 1px solid #000;
+  }
+}
+
+section .section-our-service .service-items .service-items-box ul li .slash {
+  font-size: 25px;
+  color: rgb(168, 195, 6);
+  font-weight: 700;
+  width: 1px;
+  margin: 0px 5px;
+}
+
+section .section-our-service .service-items .service-items-box button,
+section .section-request .section-request-body button {
+  border: none;
+}
+
+section .section-our-service .service-items .service-items-box button a {
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+section .section-our-service .service-items .service-items-box .image-page {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+
+/* section .section-our-service .service-items .service-items-box .image-page img {
+  transform: scale(1.1);
+  position: absolute;
+  bottom: 26px;
+} */
+
+/* Section our advantages Page */
+section .section-our-advantages {
+  background-image: url("/images/our advantages background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 75px 0;
+}
+
+section .section-our-advantages .section-our-advantage-title h1 {
+  color: #fff;
+}
+
+section .section-our-advantages .section-our-advantages-items .box {
+  text-align: center;
+  margin-top: 50px;
+}
+
+section .section-our-advantages .section-our-advantages-items .box .body-text .customer-number h3 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+section .section-our-advantages .section-our-advantages-items .box .body-text p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 25px 0;
+}
+
+/* Section Client Page */
+
+section .section-our-client {
+  padding: 75px 0 125px 0;
+}
+
+section .section-our-client .section-our-client-items-logo .box {
+  max-width: 23%;
+  text-align: center;
+  margin-top: 50px;
+  padding: 15px;
+  box-shadow: 0 0 8px rgb(37 37 37 / 15%);
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+/* Section request Page */
+
+section .section-request {
+  background-image: url("/images/request background.jpg");
+  padding: 50px 75px;
+  position: relative;
+}
+
+section .section-request .section-request-title h1 {
+  text-align-last: left;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 70px;
+}
+
+section .section-request .section-request-body h2 {
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+section .section-request .section-request-body button a {
+  border-radius: 5px;
+}
+
+section .section-request .section-request-body p {
+  font-size: 33px;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+section .section-request img {
+  position: absolute;
+  bottom: 0;
+  right: 15%;
+}
+
+
+
+/* =========================== MEDIA QUERY STARTING =========================== */
+@media (max-width:1199px) {
+  section .section-title .item-box .box {
+    max-width: 32% !important;
+  }
+}

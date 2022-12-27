@@ -1,0 +1,250 @@
+/* Fonts Use Page */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap");
+
+/* navbar css use page */
+@import url("/stylesheets/navbar/navbar.css");
+
+/* Uslugi css use page */
+@import url("/stylesheets/uslugi/uslugi.css");
+
+/* navbar css use page */
+@import url("/stylesheets/section/section.css");
+
+/* price css use page */
+@import url('/stylesheets/price/price.css');
+
+/* price css use page */
+@import url('/stylesheets/uslugi/uslugi.css');
+
+/* price css use page */
+@import url('/stylesheets/portfolio/portfolio.css');
+
+/* company css use page */
+@import url('/stylesheets/company/company.css');
+
+/* Otziv css use page */
+@import url('/stylesheets/otziv/otziv.css');
+
+/* contact css use page */
+@import url('/stylesheets/contact/contact.css');
+
+/* Vakansii css use page */
+@import url('/stylesheets/vakansii/vakansii.css');
+
+/* footer css use page */
+@import url('/stylesheets/footer/footer.css');
+
+/* major css use page */
+@import url('/stylesheets/major-adm/navbar.css');
+
+/* admin Page  css use page */
+@import url('/stylesheets/major-adm/admin.page.style.css');
+
+/* sendResume css use page */
+@import url('/stylesheets/sendResume/sendResume.css');
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none !important;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+
+.right-fixed-button {
+  position: fixed;
+  transform: rotate(-90deg);
+  right: -100px;
+  top: 55%;
+  width: auto;
+  padding: 12px 21px;
+  background-color: #DC3545;
+  border: none;
+  z-index: 99999 !important;
+  color: #fff;
+}
+
+.fixedNavbar {
+  position: fixed;
+  top: 0;
+  z-index: 888;
+  width: 100%;
+  transition: 1500ms;
+}
+
+
+.up-to-button {
+  opacity: 0;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 3px;
+  border: none;
+  bottom: 30px;
+  right: 30px;
+  background-color: #DC3545;
+  z-index: 15000;
+}
+
+.up-to-button i {
+  color: #fff;
+  font-size: 26px;
+}
+.blur{
+  filter: blur(10px);
+}
+
+/* location-screen-box */
+.location-screen-box {
+  display: none;
+  transition: all 500ms;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #303030ba;
+  z-index: 9999999;
+}
+.location-screen-box .box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 25px;
+}
+.location-screen-box .box h3{
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 25px;
+}
+.location-screen-box .box ul {
+  padding: 0;
+  padding-left: 15px;
+}
+.location-screen-box .box ul li{
+  list-style-type: none;
+  transition: all 500ms;
+}
+.location-screen-box .close-button{
+  position: absolute;
+  top: -6px;
+  right: 0px;
+
+}
+.location-screen-box .close-button i{
+  color: #000000;
+  font-weight: 700;
+  font-size: 26px;
+  transition: all 500ms;
+}
+.location-screen-box .close-button i:hover  {
+  cursor: pointer;
+}
+.active{
+  border-bottom: 1px solid #DC3545;
+}
+
+/* Header banner Css Page */
+section .header-banner {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 175px 0;
+}
+
+section .header-banner h2 {
+  color: #dc3545 !important;
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: -3px;
+}
+
+section .header-banner .title {
+  color: #252525;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: -1px;
+}
+
+
+/* Usluga Narxlari */
+/* section .header-banner .title-text {
+  font-size: 24px;
+  font-weight: 700;
+  color: #252525;
+  margin: 30px 0;
+} */
+
+section .header-banner span {
+  color: #252525;
+  font-size: 26px;
+  font-weight: 300;
+}
+
+section .web-portfolio-page button,
+section .work-plan-page button,
+section .tarif-plan button,
+section .price-job button,
+section .contact-list-group-items .tab-content .submit-resume-page form button,
+section .price-web-page .right-page button,
+section .header-banner button {
+  margin-top: 10px;
+  border: none;
+  padding: 20px 35px;
+  background-color: #dc3545;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  display: block;
+  color: #fff;
+}
+section .web-portfolio-page button a{
+  color: #fff;
+}
+
+section .section-body-text {
+  padding: 70px 0 60px;
+}
+section .section-body-text h3 ,
+section .work-plan-page h3 ,
+section .price-web-page h3 ,
+section  .specialist-page h1,
+section .price-job h1,
+section .tarif-plan h3 ,
+section .web-portfolio-page h3 {
+  text-align: center;
+  position: relative;
+  color: #0b0d3e;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+section .section-body-text ul li,
+section .section-body-text p{
+  line-height: 21px;
+}
+
+
+
+
+/* media Query starting */
+@media (max-width:1199px){
+  .right-fixed-button {
+    transform: none;
+    top: 90%;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+  }
+}

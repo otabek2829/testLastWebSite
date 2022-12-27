@@ -1,0 +1,33 @@
+{{> header/admin-nav}}
+<div class="image-page">
+    <div class="title text-center my-5">
+        <h3>{{title}}</h2>
+    </div>
+</div>
+
+<div class="container nashi-client">
+    <div class="row row-cols-1 justify-content-between">
+        {{#each data}}
+        <div class="col-3 box">
+            <img src="/images/{{this.img}}" alt="">
+            <div class="delete">
+                <a href="/admin/delete/{{this._id}}">
+                <i class="bi bi-trash3"></i>
+                </a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
+<div class="upload-box">
+    <form action="/admin/nashi-klienti" method="POST" enctype="multipart/form-data">
+        <div class="card" style="width: 9rem;">
+            <img src="https://www.pngarts.com/files/2/Upload-Transparent-Images.png" class="card-img-top img-fluid"
+                alt="...">
+            <input type="file" name="img" required>
+            <div class="card-body p-0 ">
+                <button class="btn btn-danger">Send File</button>
+            </div>
+        </div>
+    </form>
+</div>

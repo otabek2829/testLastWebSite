@@ -1,0 +1,180 @@
+<!-- Section Starting -->
+<section>
+
+    <!-- Section Title Page -->
+    <div class="section-title">
+        <div class="container-fluid container-xl">
+            <div class="text-panel-page">
+                <h1>ИНТЕРНЕТ-МАРКЕТИНГ</h1>
+                <h3>С ГАРАНТИЕЙ РЕЗУЛЬТАТА</h3>
+                <p>Погружение. Изучение. Результат.</p>
+            </div>
+            <div class="row item-box justify-content-between">
+                {{#each datas}}
+                <div class="col-4  my-3 box">
+                    <div class="body-text">
+                        <h2>{{this.title}}</h2>
+                        <p>{{this.bodyText}}</p>
+                        <div class="price formatPrice ">от <span>{{this.price}}</span> сум / {{this.timeData}}</div>
+                    </div>
+                    <a href="#">УЗНАТЬ ПОДРОБНЕЕ <i class="bi bi-arrow-right"></i></a>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Section About Page  -->
+    <div class="section-about">
+        <div class="container">
+            <div class="row  justify-content-center">
+                <div class="col-7 body-text">
+                    <h1>MAJOR - ЭТО</h1>
+                    <div class="head-text">
+                        <img src="/images/box-icon/qoshtirnoq.png" alt="">
+                        <p>1-й официальный партнер Google и Яндекс в Узбекистане. В штате компании работают 10
+                            специалистов, получившие, 20 сертификатов Google и Яндекс в различных областях
+                            интернет-рекламы.</p>
+                    </div>
+                    <div class="body-text">
+                        <p> <span> Major Media -это компания</span>, которая
+                            оказывает услуги для онлайн-бизнеса в сфере цифровых технологий. Как правило, мы являемся
+                            основным ключевым моментом продаж вашей компании в социальных сетях. В нашей компании
+                            работают более 10 сотрудников которые готовы вывести ваш бизнес на новый уровень не только в
+                            социальных сетях но и в социальной жизни.
+                            Наши брендированные партнеры и их результаты говорит о нас.
+                            Интернет маркетинг в Ташкенте
+                            Наше агентство готово помочь вам обрести новых клиентов и увеличит продажи на долгий срок
+                        </p>
+                        <a href="#" class="btn-to-document">ПРЕЗЕНТАЦИЯ КОМПАНИИ</a>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <img class="people" src="/images/people/people.png" class="img-fluid" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Our Service Page  -->
+    <div class="section-our-service">
+        <div class="container">
+
+            <div class="section-our-service-title">
+                <h1>НАШИ УСЛУГИ</h1>
+            </div>
+
+            <div class="service-items">
+                <div class="row flex-column">
+                    <div class="col-12 service-items-box">
+                        <div class="row">
+                            <div class="col-6 body-text">
+                                <h2>Реклама и продвижение в Google и Яндекс</h2>
+                                <p>Контекстная реклама актуальна для новых сайтов, так как такие проекты еще не
+                                    успели занять хорошие позиции в органической выдаче. А если сайт уже находится в
+                                    поиске, рекламный трафик будет являться дополнительным источником привлечения
+                                    лидов.</p>
+                                <ul>
+                                    {{#each dataLogoBanner}}
+                                    <li>
+                                        <a href="#">{{this.uslugiTitle}}</a>
+                                        <span class="slash"> / </span>
+                                        <span class="price formatPrice">от
+                                            <strong><span>{{this.uslugiPrice}}</span></strong> сум</span>
+                                    </li>
+                                    {{/each}}
+                                </ul>
+                                <button onclick="openResumeScreen()">УЗНАТЬ ПОДРОБНЕЕ</button>
+                            </div>
+                            <div class="col-6 image-page">
+                                <img class="img-fluid" src="/images/box-icon/our services 1.png" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-12 service-items-box">
+                        <div class="row">
+                            <div class="col-6 body-text">
+                                <h2>Реклама и продвижение в соцсетях (SMM)</h2>
+                                <p>Создаем и развиваем сайты с высокой конверсией, которые легко вывести в ТОП.
+                                    Полностью ведем проект или помогаем команде на стороне клиента.</p>
+                                <ul>
+                                    {{#each dataSmm}}
+                                    <li>
+                                        <a href="#">{{this.uslugiTitle}}</a>
+                                        <span class="slash"> / </span>
+                                        <span class="price formatPrice">от
+                                            <strong><span>{{this.uslugiPrice}}</span></strong> сум</span>
+                                    </li>
+                                    {{/each}}
+                                </ul>
+                                <button onclick="openResumeScreen()">УЗНАТЬ ПОДРОБНЕЕ</button>
+                            </div>
+                            <div class="col-6 image-page">
+                                <img class="img-fluid" src="/images/box-icon/our services 2.png" alt="">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-12 service-items-box">
+                        <div class="row">
+                            <div class="col-6 body-text">
+                                <h2>Создание WEB-сайтов</h2>
+                                <p>Создаем и развиваем сайты с высокой конверсией, которые легко вывести в ТОП.
+                                    Полностью ведем проект или помогаем команде на стороне клиента.</p>
+                                <ul>
+                                    {{#each dataWebsite}}
+                                    <li>
+                                        <a href="#">{{this.uslugiTitle}}</a>
+                                        <span class="slash"> / </span>
+                                        <span class="price formatPrice">от
+                                            <strong><span>{{this.uslugiPrice}}</span></strong> сум</span>
+                                    </li>
+                                    {{/each}}
+                                </ul>
+                                <button onclick="openResumeScreen()">УЗНАТЬ ПОДРОБНЕЕ</button>
+                            </div>
+                            <div class="col-6 image-page">
+                                <img class="img-fluid" src="/images/box-icon/our services 3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Section our advantages Page  -->
+    <div class="section-our-advantages">
+        <div class="section-our-advantage-title">
+            <h1>НАШИ ПРЕИМУЩЕСТВА</h1>
+        </div>
+        <div class="section-our-advantages-items">
+            <div class="container">
+                <div class="row justify-content-between align-items-start">
+                    {{#each dbAboutCompany}}
+                    <div class="col-3 box">
+                        <img class="img" src="/images/{{this.img}}" alt="{{this.category}}">
+                        <div class="body-text">
+                            <div class="customer-number">
+                                <h3>{{this.client}} <br> {{this.category}}</h3>
+                            </div>
+                            <p>{{bodyText}}</p>
+                        </div>
+                    </div>
+                    {{/each}}
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Client Page -->
+    {{> Page/section-our-client}}
+
+    {{!-- Section request Page --}}
+    {{> Page/section-request}}
+
+</section>

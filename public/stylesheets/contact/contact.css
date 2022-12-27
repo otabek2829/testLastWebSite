@@ -1,0 +1,272 @@
+section .contact-list-group-items .list-group {
+  justify-content: flex-start;
+}
+
+section .contact-list-group-items .list-group-item {
+  margin-right: 2px;
+}
+
+/*Contact qoldirgandan song succes oyna  */
+.succes-screen {
+  display: none;
+}
+.succes-screen .box{
+  padding:  55px 35px;
+  background-color: #f5f5f6;
+  border-radius: 10px;
+}
+.succes-screen .box .bi-patch-check{
+  font-size: 35px;
+  color:#3ded3d;
+  font-size: 60px;
+}
+.succes-screen .box h5{
+  font-weight: 600;
+  color: #000;
+}
+.succes-screen .box button{
+  padding: 14px 28px;
+  background-color: #dc3545;
+  border: none;
+  border-radius: 8px;
+}
+.succes-screen .box button i,
+.succes-screen .box button a{
+  color: #fff;
+  font-weight: 500;
+}
+
+
+
+/* Клиентам Css Page */
+section .contact-list-group-items .tab-content .adress-text-page {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+}
+
+section .contact-list-group-items .tab-content .adress-text-page h3 {
+  margin-top: 25px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #272727;
+}
+
+section .contact-list-group-items .tab-content .adress-text-page p {
+  color: #979da7;
+  font-size: 16px;
+  margin-top: 25px;
+}
+
+section .contact-list-group-items .tab-content .adress-text-page a {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+}
+
+section .contact-list-group-items .tab-content .link-page {
+  margin-top: 50px;
+}
+
+section .contact-list-group-items .tab-content .link-page .email-box,
+section .contact-list-group-items .tab-content .link-page .icon-box {
+  max-width: 100%;
+  padding: 40px 30px;
+  background-color: #f5f5f6;
+}
+
+section .contact-list-group-items .tab-content .link-page .icon-box {
+  background-color: #313896;
+}
+
+section .contact-list-group-items .tab-content .link-page .icon-box h3 {
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+}
+
+section .contact-list-group-items .tab-content .link-page .icon-box .icon-page {
+  display: flex;
+  justify-content: space-around;
+}
+
+section .contact-list-group-items .tab-content .link-page .icon-box i {
+  color: #fff;
+  font-size: 26px;
+  transition: 500ms ease;
+}
+
+section .contact-list-group-items .tab-content .link-page .icon-box a:hover i {
+  color: #a52a2a;
+}
+
+/* Партнёрам Css */
+
+section .contact-list-group-items .tab-content .partner-page .left-box {
+  padding: 0 30px;
+}
+
+section .contact-list-group-items .tab-content .partner-page h3 {
+  padding-top: 25px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #4b4b4b;
+}
+
+section .contact-list-group-items .tab-content .partner-page .left-box p {
+  font-size: 14px;
+  line-height: 15px;
+  margin: 20px 0 0;
+  color: #4b4b4b;
+}
+
+section .contact-list-group-items .tab-content .partner-page .left-box a {
+  text-decoration: underline;
+}
+
+section .contact-list-group-items .tab-content .partner-page .right-box {
+  background-color: #f5f5f6;
+  padding: 25px 20px;
+}
+
+section .contact-list-group-items .tab-content .partner-page .right-box .box {
+  transition: 500ms;
+}
+
+section .contact-list-group-items .tab-content .partner-page .right-box h4 {
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #4b4b4b;
+}
+
+section .contact-list-group-items .tab-content .partner-page .right-box .box h6 {
+  font-size: 14px;
+  color: #2f3a4f;
+  font-weight: 700;
+  margin: 0;
+}
+
+section .contact-list-group-items .tab-content .partner-page .right-box .box span {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #979da7;
+  font-weight: 700
+}
+
+section .contact-list-group-items .tab-content .partner-page .right-box .box:hover .download-icon {
+  background-color: #a52a2a;
+}
+
+section .contact-list-group-items .tab-content .partner-page .right-box .box:hover {
+  transform: translateY(-6px);
+}
+
+.contact-list-group-items .tab-content .partner-page .right-box a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section .contact-list-group-items .tab-content .partner-page .right-box a:hover {
+  text-decoration: none;
+}
+
+section .contact-list-group-items .tab-content .partner-page .right-box .text-page {
+  background-color: #fff;
+  text-align: left;
+  padding: 10px 20px;
+  width: 290px;
+  height: 90px;
+}
+
+section .contact-list-group-items .tab-content .partner-page .right-box .download-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 110px;
+  height: 89px;
+  font-size: 30px;
+  color: #fff;
+  background-color: #313896;
+}
+
+/* Соискателям Css Page */
+
+section .contact-list-group-items .tab-content .submit-resume-page {
+  padding: 25px;
+}
+
+section .contact-list-group-items .tab-content .submit-resume-page h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #4b4b4b;
+}
+
+section .contact-list-group-items .tab-content .submit-resume-page p {
+  max-width: 60%;
+  margin: 40px 0;
+  line-height: 18px;
+}
+
+section .contact-list-group-items .tab-content .submit-resume-page .form-page .form-group {
+  margin: 5px;
+}
+
+section .contact-list-group-items .tab-content .submit-resume-page .form-page input,
+section .contact-list-group-items .tab-content .submit-resume-page .form-page select {
+  position: relative;
+  height: 60px;
+  border: 1px solid #d5d7dc;
+  border-radius: 5px !important;
+  color: #2f3a4f;
+  outline: 0;
+  display: block;
+  padding: 20px 15px;
+  line-height: 1 !important;
+  text-decoration: none;
+  background: #fff;
+}
+
+section .contact-list-group-items .tab-content .submit-resume-page .form-page select:focus,
+section .contact-list-group-items .tab-content .submit-resume-page .form-page input:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #979da7;
+  outline: 0;
+  box-shadow: none !important;
+}
+
+::-webkit-file-upload-button {
+  opacity: .9;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+/* section .contact-list-group-items .tab-content .submit-resume-page form button {
+  border: none;
+  box-shadow: 0 0 6px #a52a2a;
+  transition: 100ms;
+  border-radius: 8px;
+} */
+
+section .contact-list-group-items .tab-content .submit-resume-page form button:hover {
+  box-shadow: 0 0 10px #a52a2a;
+}
+
+section .contact-list-group-items .tab-content .submit-resume-page form .button-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+section .contact-list-group-items .tab-content .submit-resume-page form .button-text p {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  font-size: 13px;
+}

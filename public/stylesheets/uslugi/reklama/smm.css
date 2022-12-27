@@ -1,0 +1,124 @@
+section .smm-page {
+    background-image: url('/images/Uslugi/Reklama/smm-prodvizhenie-bg.jpg');
+}
+
+section .smm-page-banner .tarif-plan {
+    background-color: #f5f5f5;
+}
+
+section .tarif-plan {
+    background-color: #f5f5f5;
+    padding: 50px 60px;
+}
+
+section .tarif-plan .box {
+    max-width: 32%;
+    box-shadow: 0 27px 51px rgb(47 58 79 / 23%);
+    padding: 0 0 30px;
+    background-color: #fff;
+}
+
+section .tarif-plan .title {
+    border-bottom: 1px solid #a52a2a;
+}
+
+section .tarif-plan h4 {
+    color: #0b0d3e;
+    font-size: 28px;
+    font-weight: 700;
+    padding-bottom: 15px;
+    padding: 20px 20px 10px;
+}
+
+section .tarif-plan .body-text ul {
+    padding: 20px 20px 20px 40px;
+}
+
+section .tarif-plan .body-text ul li {
+    color: #2a2a2a;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 10px;
+
+}
+
+section .tarif-plan .body-text p {
+    color: #2a2a2a;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+section .tarif-plan .price-page {
+    border-top: 1px solid #a52a2a;
+}
+
+section .tarif-plan .price-page p {
+    padding: 10px 20px;
+}
+
+section .tarif-plan button {
+    margin-left: 30px;
+}
+
+section .tarif-plan .box:hover {
+    transform: scale('1.2');
+    ;
+}
+
+section .tarif-plan .tools-page {
+    margin-top: 50px;
+}
+
+section .tarif-plan .tools-page h4 {
+    color: #252525;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section .tarif-plan .tools-page .box {
+    text-align: center;
+    max-width: 23%;
+    padding: 15px 10px;
+    box-shadow: 0 0 8px rgb(37 37 37 / 15%);
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+section .tarif-plan .tools-page .box a {
+    display: block;
+    color: #a52a2a;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+section .specialist-page {
+    padding: 75px 60px;
+}
+
+section .specialist-page h1{
+    margin-bottom: 0px !important;
+}
+section .specialist-page p{
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 500;
+    color: #252525;
+    text-align: center;
+    margin-bottom: 70px;
+}
+section .specialist-page .title-name h3{
+    margin-top: 15px;
+    color: #0b0d3e;
+    font-size: 25px;
+    font-weight: 700;
+}
+section .specialist-page .title-name span{
+    color: #2a2a2a;
+    font-size: 20px;
+    font-weight: 400;
+}

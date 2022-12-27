@@ -1,0 +1,44 @@
+{{> header/admin-nav}}
+<div class="CommandUser">
+    <div class="title text-center my-5">
+        <h3>{{title}}</h2>
+    </div>
+</div>
+<div class="container CommandUser">
+    <div class="row row-cols-1 justify-content-start">
+        {{#each data}}
+        <div class="col-3 my-3 user-box">
+            <img class="img-fluid" src="/images/{{this.img}}" alt="{{this.name}}">
+            <div class="body-text">
+                <h3>{{name}}</h3>
+                <p>{{expert}}</p>
+                <div class="delete">
+                    <a href="/admin/nashaComanda/delete/{{this._id}}">
+                        <i class="bi bi-trash3"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+
+        <div class="col-3 my-3 text-center send-box">
+            <form action="/admin/CommandUser" method="POST" enctype="multipart/form-data">
+                <div class="img-page">
+                    <h3>200x230</h3>
+                </div>
+                <input type="file" name="img" title="your text" class="userImage"
+                    accept="image/png, image/jpg, image/jpeg" / required>
+                <div class="card-body p-0 ">
+                    <label for="">User name</label>
+                    <input type="text" name="userName" id="userName" autocomplete="off" required>
+                    <label for="">User specialist</label>
+                    <input type="text" name="userExpert" id="userExpert" autocomplete="off" required>
+                </div>
+                <button class=" sendFileButton ">Send File</button>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+

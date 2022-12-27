@@ -1,0 +1,76 @@
+{{> header/navbar}}
+<!-- Section Starting -->
+<section>
+
+
+    <!-- bg image company -->
+
+    <div class="bg-image">
+        <h1>О КОМПАНИИ</h1>
+    </div>
+    <!-- Section About Page  -->
+    <div class="company-about">
+        <div class="container">
+            <div class="row  justify-content-center">
+                <div class="col-7 body-text">
+                    <h1>MAJOR - ЭТО</h1>
+                    <div class="head-text">
+                        <img src="/images//box-icon/qoshtirnoq.png" alt="">
+                        <p>1-й официальный партнер Google и Яндекс в Узбекистане. В штате компании работают 10
+                            специалистов, получившие, 20 сертификатов Google и Яндекс в различных областях
+                            интернет-рекламы.</p>
+                    </div>
+                    <div class="body-text">
+                        <p> <span>Статус Сертифицированного агентства</span> говорит о высоком качестве работы с
+                            системой Яндекс. Сертификат выдается по результатам проверки знаний специалистов
+                            агентства и анализа эффективности применения этих знаний на практике.
+                        </p>
+                        <h4 class="footer-text-title">
+                            Интернет-маркетинг в Ташкенте</h4>
+                        <p class="footer-text">
+                            Наше рекламное агентство в Ташкенте готово помочь Вам обрести новых клиентов и увеличить
+                            свои продажи!
+                        </p>
+                        <a href="#" class="btn-to-document">ПРЕЗЕНТАЦИЯ КОМПАНИИ <i class="bi bi-file-earmark"></i> </a>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <img class="people" src="/images//people/people.png" class="img-fluid" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our Commands -->
+    <div class="our-commands">
+        <div class="container">
+            <div class="our-commands-title ">
+                <h1>НАША КОМАНДА</h1>
+                <p>давайте знакомиться</p>
+            </div>
+
+            <div class="info-commands">
+                <div class="row">
+                      {{#each CommandUser}}
+                    <div class="col-3 box">
+                        <img class="img-fluid" src="/images/{{this.img}}" alt="{{name}}">
+                        <div class="name">
+                            <h4>{{name}}</h4>
+                            <span>{{expert}}</span>
+                        </div>
+                    </div>
+                      {{/each}}
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Consultation page -->
+    {{> Page/section-consultation}}
+
+       <!-- Section Client Page -->
+    {{> Page/section-our-client}}
+
+</section>
+{{> Footer/footer}}

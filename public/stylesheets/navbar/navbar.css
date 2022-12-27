@@ -1,0 +1,269 @@
+#header .header-top {
+  padding: 15px 0;
+}
+
+#header .header-top .header-logo {
+  max-width: 100%;
+  height: auto;
+}
+
+#header .header-top .header-contact .header-contact-email,
+#header .header-top .header-contact .header-contact-phone {
+  color: #000;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+#header .header-top .header-contact .header-contact-worktime,
+#header .header-top .header-contact .header-contact-adress {
+  margin: 0;
+  font-size: 20px;
+  color: #2a2a2a;
+}
+
+#header .header-top .header-contact .header-contact-workdays,
+#header .header-top .header-contact .header-contact-location {
+  font-size: 18px;
+  color: #2a2a2a;
+}
+
+#header .header-top .header-contact .header-contact-location {
+  color: blue;
+}
+
+#header .header-top .contact-btn button {
+  border-radius: 5px;
+}
+
+#header .header-top .contact-btn button a,
+section .contact-list-group-items .tab-content .submit-resume-page form button {
+  padding: 12px 21px;
+  background-color: #dc3545;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  display: block;
+  width: 100%;
+}
+
+#header .header-top .header-contact .or {
+  display: block;
+  width: 1px;
+  height: 40px;
+  background-color: silver;
+}
+
+#header .header-top .header-contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Header Menu Starting */
+header .header-menu {
+  background-color: #000;
+  padding: 20px 0;
+}
+
+header .fixed-menu-navbar {
+  position: relative;
+}
+
+header .header-menu .navbar {
+  width: 100%;
+}
+
+header .header-menu .navbar ul {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+header .header-menu .navbar ul li {
+  list-style-type: none !important;
+  margin: 0 20px;
+  transition: 500ms ease;
+}
+
+header .header-menu .navbar ul li:hover a,
+header .header-menu .navbar ul li:hover i {
+  color: #a52a2a;
+}
+
+header .header-menu .navbar ul li:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+header .header-menu .navbar ul .uslugi,
+header .header-menu .navbar ul li a {
+  color: #fff;
+  padding-bottom: 2px;
+  font-size: 13px;
+}
+
+header .header-menu .navbar ul .uslugi {
+  position: relative;
+  color: #fff;
+  margin-top: 3px;
+}
+
+header .header-menu .navbar ul .uslugi i {
+  color: #fff;
+  transition: 500ms ease;
+}
+
+/* Dropdown Menu Show Css */
+.show {
+  opacity: .96 !important;
+  z-index: 999 !important;
+  transform: translateX(0px) !important;
+}
+
+.arrow_icon {
+  transition: 500ms ease;
+  display: inline-block;
+  transform: rotate(-180deg);
+}
+
+
+header .header-menu .navbar ul li a:hover {
+  transition: all 500ms;
+  text-decoration: none;
+}
+
+header .header-menu .dropdown__menu {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  top: 200px;
+  background-color: #fff !important;
+  z-index: -999;
+  padding: 35px 0 150px;
+  transform: translateX(-2200px);
+  transition: 500ms ease;
+}
+
+header .header-menu .dropdown__menu ul li {
+  list-style-type: none;
+}
+
+header .header-menu .dropdown__menu ul li i {
+  color: #a52a2a;
+  font-size: 21px;
+  margin-right: 10px;
+}
+
+header .header-menu .dropdown__menu .ul-title {
+  margin-bottom: 20px;
+}
+
+header .header-menu .dropdown__menu .ul-title h6 a {
+  font-size: 16px;
+  color: #212529;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+header .header-menu .dropdown__menu ul li a {
+  font-size: 15px;
+  color: #0B0D3e;
+  font-weight: 400;
+}
+
+header .header-menu .dropdown__menu ul li:hover a {
+  border-bottom: 1px solid #a52a2a;
+}
+
+
+/* ========================= MEDIA QUERY STARTING | RESPONSIVE STARTING ========================= */
+
+/*   Max Width : 1400 px Starting */
+@media (max-width: 1399px) {
+
+  section .section-about .people,
+  section .company-about .people {
+    top: 178px !important;
+  }
+}
+
+/*  Max Width : 1200 px Starting */
+@media (max-width:1199px) {
+  header .header-menu .navbar ul li {
+    margin: 0 18px;
+  }
+
+  section .section-title .item-box .box .price {
+    font-size: 16px !important;
+  }
+
+  section .section-title .item-box .box a,
+  section .section-about .body-text a,
+  section .section-our-service .service-items .service-items-box button,
+  section .section-request .section-request-body button,
+  section .company-about .body-text a,
+  section .vakansi-items-page button,
+  .sendResumeScreen .box form button {
+    padding: 20px 30px !important;
+  }
+
+  section .section-title .item-box .box a i {
+    margin-left: 0px !important;
+  }
+
+  section .section-about .people,
+  section .company-about .people {
+    top: 336px !important;
+  }
+
+  section .section-our-service {
+    padding: 84px 25px !important;
+    overflow: hidden;
+  }
+
+  section .section-our-service .service-items .service-items-box p {
+    font-size: 16px;
+  }
+
+  section .section-our-service .service-items .service-items-box ul {
+    margin-left: 0 !important;
+  }
+
+  section .section-our-service .service-items .service-items-box ul li a {
+    font-size: 16px !important;
+  }
+
+  section .web-portfolio-page button,
+  section .work-plan-page button,
+  section .tarif-plan button,
+  section .price-job button,
+  section .contact-list-group-items .tab-content .submit-resume-page form button,
+  section .price-web-page .right-page button,
+  section .header-banner button {
+    margin-top: 10px;
+    border: none;
+    padding: 32px 20px;
+  }
+}
+
+/* Max Width : 992 px Starting */
+@media (max-width: 991px) {
+  header .header-menu .navbar ul li {
+    margin: 0 7px;
+  }
+}
+
+/* Max Width : 768 px Starting  */
+@media (max-width:767px) {
+  
+}
+/* Max Width : 576 px Starting  */
+@media (max-width:575px) {
+  
+}
+/* Max Width : 320 px Starting  */
+@media (max-width:319px) {
+  
+}

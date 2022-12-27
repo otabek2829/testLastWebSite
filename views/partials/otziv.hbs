@@ -1,0 +1,53 @@
+{{> header/navbar}}
+<!-- Section Starting -->
+<section>
+
+    <!-- Reviews banner -->
+    <div class="reviews-banner header-banner">
+        <div class="container">
+            <div class="col-8">
+                <h2>ОТЗЫВЫ КЛИЕНТОВ</h2>
+                <p class="title">[ПРОФЕССИОНАЛЬНОЕ DIGITAL-АГЕНТСТВО]</p>
+
+                <p class="body-text">с самого начала, до первого результата,навсегда</p>
+                <span>Делаем свою работу на 5+</span> <br>
+                <button onclick="openResumeScreen()">Получить консультацию</button>
+            </div>
+        </div>
+    </div>
+
+    {{!-- Video otziv page --}}
+    <div class="video-otziv-page">
+        <div class="container">
+            <div class="otziv-video-title mb-5">
+                <h1>ВИДЕО ОТЗЫВЫ НАШИХ КЛИЕНТОВ</h1>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <iframe width="640" height="360" src="https://mover.uz/video/embed/0EGBI4KI" frameborder="0"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-6">
+                    <iframe width="640" height="360" src="https://mover.uz/video/embed/AEwV968m" frameborder="0"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-6 my-5">
+                    <iframe width="640" height="360" src="https://mover.uz/video/embed/GJ9LjaTm" frameborder="0"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="col-6 my-5">
+                    <iframe width="640" height="360" src="https://mover.uz/video/embed/kgk0px8m" frameborder="0"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Consultation page -->
+    {{> Page/section-consultation}}
+
+    <!-- Section Client Page -->
+    {{> Page/section-our-client}}
+
+</section>
+{{> Footer/footer}}

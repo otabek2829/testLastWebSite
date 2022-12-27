@@ -1,0 +1,33 @@
+
+
+<div class="sendResumeScreen">
+    <div class="close-button" onclick="closeResumeScreen()">
+        <i class="bi bi-x"></i>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-4 box">
+                <form id="form-message" action="sendResumeScreen" method="POST" enctype="multipart/form-data" >
+                    <div class="title">
+                        <h2>Отправьте заявку и наш менеджер свяжется с Вами</h2>
+                    </div>
+                    <div class="body-page">
+                        <input type="text" name="name" id="userName" placeholder="Имя" autocomplete="off" required>
+                        <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Телефон" autocomplete="off" required>
+                        <button id="submit-btn" value="Отправить заявку" type="submit">Отправить заявку</button>
+                    </div>
+                    <div class="success-page">
+                        <div class="check">
+                            <i class="bi bi-patch-check-fill"></i>
+                        </div>
+                        <h3>Спасибо за заявку!</h3>
+                        <p>Наш менеджер свяжется с Вами!</p>
+                        <a href="/"><i class="bi bi-arrow-left"></i> Вернуться на главную</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+

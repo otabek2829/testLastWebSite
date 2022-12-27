@@ -1,0 +1,82 @@
+{{> header/admin-nav}}
+<div class="CommandUser">
+    <div class="title text-center my-5">
+        <h3>{{title}}</h3>
+    </div>
+</div>
+
+<section>
+    <div class="section-our-advantages-items admin-about-company">
+        <div class="container">
+            <div class="row justify-content-between align-items-start">
+                {{#each data}}
+                <div class="col-3 my-3 box text-center">
+                    <img class="img" src="/images/{{this.img}}" alt="">
+                    <div class="body-text">
+                        <div class="customer-number">
+                            <h3>{{this.client}}<br>
+                                {{this.category}}
+                            </h3>
+                        </div>
+                        <p>{{this.bodyText}}</p>
+                    </div>
+                    <a class="updateBtn" href="/admin/aboutCompany/update/{{this._id}}"><i
+                            class="bi bi-pencil"></i></a>
+                    <a class="deleteBtn" href="/admin/aboutCompany/delete/{{this._id}}"><i
+                            class="bi bi-trash3"></i></a>
+                </div>
+                {{/each}}
+                <div class="col-3 my-5 text-center send-box px-0">
+                      {{#if client}}
+                     <form method="POST" enctype="multipart/form-data">
+                        <div class="img-page">
+                            <h3>150x150</h3>
+                        </div>
+                        <input type="file" name="img" class="userImage" value="{{img}}" accept="image/png, image/jpg, image/jpeg" /required>
+                        <div class="card-body p-0 ">
+                            <input type="text" name="client" value="{{client}}" id="client" required>
+                            <input type="text" name="bodyText" id="bodyText" value="{{bodyText}}"  autocomplete="off" placeholder="type text"
+                                required>
+                            <select name="category" id="select" autofocus required>
+                                <option value="">{{category}}</option>
+                                <option value="oпыта">опыта</option>
+                                <option value="клиентов">клиентов</option>
+                                <option value="проектов">проектов</option>
+                                <option value="cпециалистов">специалистов</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="sendFileButton ">Send File</button>
+                    </form>  
+                       {{else}} 
+                  
+                    <form action="/admin/aboutCompany" method="POST" enctype="multipart/form-data">
+                        <div class="img-page">
+                            <h3>150x150</h3>
+                        </div>
+                        <input type="file" name="img" class="userImage" accept="image/png, image/jpg, image/jpeg" /
+                            required>
+                        <div class="card-body p-0 ">
+                            <input type="text" name="client" id="client" required>
+                            <input type="text" name="bodyText" id="bodyText" autocomplete="off" placeholder="type text"
+                                required>
+                            <select name="category" id="select" autofocus required>
+                                <option value="">Bыберите категория</option>
+                                <option value="oпыта">опыта</option>
+                                <option value="клиентов">клиентов</option>
+                                <option value="проектов">проектов</option>
+                                <option value="cпециалистов">специалистов</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="sendFileButton ">Send File</button>
+                    </form>  
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{!-- Bootstrap JS Ulanishi --}}
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>

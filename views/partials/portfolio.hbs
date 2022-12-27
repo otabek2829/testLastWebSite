@@ -1,0 +1,111 @@
+{{> header/navbar}}
+
+<!-- Section Page -->
+<section>
+
+    <!-- Section page -->
+    <div class="section-portfolio-page header-banner">
+        <div class="section-portfolio-page-title">
+            <div class="container">
+                <h2>НАШЕ ПОРТФОЛИО</h2>
+                <p class="title">[НАШИ КЛИЕНТЫ - НАША ГОРДОСТЬ!]</p>
+                <p class="title-text">с самого начала, до первого <br> результата, навсегда</p> <br>
+                <span>Цена забывается, качество остается.</span> <br>
+                <button onclick="openResumeScreen()">Получить консультацию <i class="bi bi-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- List Group Items -->
+    <div class="portfolio-list-group-items">
+        <div class="container">
+            <div class="row flex-column">
+                <div class="col-12">
+                    <div class="list-group" id="list-tab" role="tablist">
+
+                        <!-- Button father -->
+
+                        <!-- Разработка сайтов -->
+                        <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
+                            href="#list-home" role="tab" aria-controls="home">Разработка
+                            сайтов</a>
+
+
+                        <!-- Логотипы, баннера -->
+                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+                            href="#list-messages" role="tab" aria-controls="messages">Логотипы, баннера</a>
+
+                        <!-- SMM-продвижение -->
+                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+                            href="#list-settings" role="tab" aria-controls="settings">SMM-продвижение</a>
+
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="tab-content" id="nav-tabContent">
+
+                        <!-- Button bosilganda u haqida ma\lumot chiqishi -->
+
+                        <!-- Разработка сайтов -->
+                        <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                            aria-labelledby="list-home-list">
+                            <div class="row">
+                                {{#each webPortfolio}}
+                                  <div class="col-4 box my-3">
+                                <div class="image">
+                                    <a href="#">
+                                        <img src="/images/{{this.img}}" alt="{{this.webAdress}}">
+                                    </a>
+                                </div>
+                                <div class="body-text ">
+                                    <h6 class="m-0">Проект: <strong>{{this.webAdress}}</strong></h6>
+                                    <p class="m-0">{{this.aboutText}}</p>
+                                </div>
+                            </div>
+                                {{/each}}
+                            </div>
+                        </div>
+
+                        <!-- Логотипы, баннера -->
+                        <div class="tab-pane fade" id="list-messages" role="tabpanel"
+                            aria-labelledby="list-messages-list">
+                            <div class="row">
+                                {{#each logoBannerPortfolio}}
+                                <div class="col-4 box">
+                                    <div class="image">
+                                      <img src="/images/{{this.img}}" alt="">
+                                    </div>
+                                </div>
+                                {{/each}}
+                            </div>
+                        </div>
+
+                        <!-- SMM-продвижение -->
+                        <div class="tab-pane fade" id="list-settings" role="tabpanel"
+                            aria-labelledby="list-settings-list">
+                            <div class="row">
+                                {{#each smmPortfolio}}
+                                <div class="col-4 box">
+                                    <div class="image">
+                                      <img src="/images/{{this.img}}" alt="">
+                                    </div>
+                                </div>
+                                {{/each}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Consultation page -->
+    {{> Page/section-consultation}}
+
+       <!-- Section Client Page -->
+    {{> Page/section-our-client}}
+
+</section>
+
+{{> Footer/footer}}

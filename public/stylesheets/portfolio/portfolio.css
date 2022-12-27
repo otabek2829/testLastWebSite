@@ -1,0 +1,34 @@
+section .section-portfolio-page{
+    background-image: url("/images/portfolio-page-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 75px 0;
+}
+.admin-portfolio-page .list-group ,
+section .portfolio-list-group-items .list-group {
+    justify-content: center;
+}
+.admin-portfolio-page .list-group-item,
+section .portfolio-list-group-items .list-group-item{
+    margin-right: 3px;
+}
+section .web-portfolio-page .box .image,
+.admin-portfolio-page  .tab-content .box .image,
+section .portfolio-list-group-items .tab-content .box .image{
+    text-align: center;
+    border: 2px solid #ebebeb;
+    border-radius: 5px;
+    padding: 1px;
+}
+.admin-portfolio-page  .tab-content .box .image img,
+section .portfolio-list-group-items .tab-content .box .image img{
+    max-width: 100%;
+    height: auto;
+}
+section .web-portfolio-page .box .body-text,
+.admin-portfolio-page  .tab-content .box .body-text,
+section .portfolio-list-group-items .tab-content .box .body-text{
+    text-align: center;
+    margin-top: 20px;
+}

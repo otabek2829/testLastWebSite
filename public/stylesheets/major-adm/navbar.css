@@ -1,0 +1,131 @@
+nav {
+    background-color: #282e3c;
+    padding: 20px 30px;
+}
+
+nav h4 {
+    color: #fff;
+    margin: 0;
+    margin-left: 45px;
+}
+
+nav i {
+    position: absolute;
+    color: #fff;
+    margin-right: 5px;
+    font-size: 28px;
+}
+
+nav .bi-x-circle {
+    display: none;
+}
+
+nav img {
+    width: 145px;
+    margin-right: 20px;
+}
+
+nav a {
+    color: red;
+}
+
+/* Menu banner Css */
+.hide {
+    left: 0px !important;
+}
+.fixedNavbar {
+    position: fixed;
+    top: 0;
+    z-index: 888;
+    width: 100%;
+    transition: 1500ms;
+}
+
+.fixed-right-menu {
+    position: fixed;
+    top: 80px;
+    height: 100%;
+    z-index: 55555;
+    left: -280px;
+    max-width: 250px;
+    background-color: #282e3c;
+    padding: 25px 25px 165px 15px;
+    transition: 500ms ease;
+}
+
+.fixed-right-menu h4 {
+    text-align: left;
+    color: #fff;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+
+.fixed-right-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-items: center;
+}
+
+.fixed-right-menu ul li {
+    position: relative;
+    list-style-type: none;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fff;
+}
+
+
+.fixed-right-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Body Image page */
+
+.nashi-client {
+    padding: 10px 0 250px;
+}
+
+.nashi-client .box {
+    position: relative;
+    max-width: 23%;
+    text-align: center;
+    margin: 25px 0;
+    border: 1px solid #00000021;
+}
+
+.nashi-client .box .delete {
+    position: absolute;
+    top:68px;
+    right: 5px;
+}
+
+.nashi-client .box .delete i {
+    color: #000;
+    font-size: 26px;
+}
+
+.nashi-client .box .delete i:hover {
+    cursor: pointer;
+}
+
+.upload-box {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    text-align: center;
+}
+
+.upload-box button {
+    margin: 2px;
+    width: 100%;
+}
+
+ .upload-box .nashi-client input[type="file"] {
+    cursor: pointer;
+    transform: scale(3);
+}
